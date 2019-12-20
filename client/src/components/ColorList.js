@@ -30,9 +30,9 @@ const ColorList = ({ colors, updateColors }) => {
 
         setEditing(false);
 
-        let newColors = colors.map((color, index) => {
-          if (color.id === colorToEdit.id) {
-            return (color = colorToEdit);
+        let newColors = colors.map((color) => {
+          if (color.id === response.data.id) {
+            return (color = response.data);
           }
           else {
             return color;
